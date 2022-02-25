@@ -4,9 +4,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>js-dom</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    
+    <div class="container" id="wrapper">
+        <header>
+            <nav>
+                <ul id="nav_menu"></ul>
+            </nav>
+        </header>
+        <div>
+            <div id="page-banner" class="w-50 py-5">
+                <h1 class="text-center">Bookorama</h1>
+                <p class="text-center">Books for Ninjas</p>
+                <input class="form-control" type="text" placeholder="Search books...">
+            </div>
+        </div>
+        <div id="book-list" class="py-5 w-50">
+            <h1>Books to Read</h1>
+            <div>
+                <div class="d-flex justify-content-between p-2 mb-3 bg-light ">
+                <div><h5>Name of Wind</h5></div>
+                <div><button class="btn btn-outline-primary">delete</button></div>
+                </div>
+                
+                <div class="d-flex justify-content-between p-2 bg-light">
+                    <div><h5>The Wise Man's Fear</h5></div>
+                    <div><button class="btn btn-outline-primary">delete</button></div>
+                </div>
+                
+            </div>
+
+        </div>
+        <form id="add-book"></form>
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
